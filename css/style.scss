@@ -183,4 +183,32 @@ h2 > a:active{
 	.open{
 		font-family: $font-3;
 	}
+	.fillIn{
+		@include border-radius(10px);
+		background-color: $fillin;
+		margin: 10px;
+		padding: 10px;
+	}
+	#resumeFill{
+			p { 
+			  padding: 10px;
+			  margin-left: 10px;
+			  font-size: 22px;
+			  display: inline-block;}
+			  
+			p span {
+			  color: $splash;
+			}
+
+			ul {
+			  text-align: left;
+			  font-family: $font-4;
+			}
+			li {
+			  text-align: left;
+			  font-family: $font-4;
+			  display: block;
+			  margin-left: 10px;
+			}
+}
 }

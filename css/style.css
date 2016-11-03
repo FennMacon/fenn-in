@@ -149,6 +149,31 @@ h2 > a:active {
 
 @media (max-width: 768px) {
   .open {
-    font-family: "Montserrat", sans-serif; } }
+    font-family: "Montserrat", sans-serif; }
+
+  .fillIn {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #5f5f5f;
+    margin: 10px;
+    padding: 10px; }
+
+  #resumeFill p {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 22px;
+    display: inline-block; }
+  #resumeFill p span {
+    color: #E03333; }
+  #resumeFill ul {
+    text-align: left;
+    font-family: "Arvo", serif; }
+  #resumeFill li {
+    text-align: left;
+    font-family: "Arvo", serif;
+    display: block;
+    margin-left: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
