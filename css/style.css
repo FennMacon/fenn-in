@@ -147,4 +147,8 @@ h2 > a:active {
   text-decoration: none;
   color: #3f3f3f; }
 
+@media (max-width: 768px) {
+  .open {
+    font-family: "Montserrat", sans-serif; } }
+
 /*# sourceMappingURL=style.css.map */
