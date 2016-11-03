@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Bitter|Bungee+Hairline|Montserrat');
+
+$font-1: 'Bitter', serif;
+$font-2: 'Bungee Hairline', cursive;
+$font-3: 'Montserrat', sans-serif;
+$font-4: 'Arvo', serif;
+
+$splash: #E03333;
+$open: #33AAAA;
+$background: #3f3f3f;
+$fillin: #5f5f5f;
+$white: #ffffff;
+
+@mixin transition($time){
+	-webkit-transition : all $time ease-in;
+	-moz-transition    : all $time ease-in;
+	-o-transition      : all $time ease-in;
+	transition         : all $time ease-in;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body{
+	background-color: $background;
+}
+
+ul{
+	text-align: center;
+}
+li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+iframe{
+	max-width: 100%;
+	display:block;
+	margin: 0 auto 0 auto;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	display:block;
+}
+
+.container { width: 100%; }
+
+#splash{
+	font-size: 72px;
+	color: $splash;
+	font-family: $font-1;
+	text-align: center;
+	display: block;
+	text-shadow: 0px 3px 0px $open, 0px 5px 5px #000;
+}
+
+.open{
+	@include transition(0.5s);
+	font-size: 50px;
+	text-decoration: none;
+	color: $open;
+	font-family: $font-2; 
+	display: block; 
+	text-transform: uppercase; 
+	margin: 0; 
+	padding: 9px 18px 9px; 
+	text-decoration: none;
+	text-shadow: 0px 3px 0px $splash, 0px 5px 5px #000;
+}
+.open:hover{
+	color: $splash;
+	text-shadow: 3px 0px 0px $open, 0px 5px 5px #000;
+}
+.open:active{
+	@include transition(0.1s);
+	color: $splash;
+	text-shadow: 3px 0px 0px $splash, 0px 5px 5px #000;
+}
+.active{
+	color: $open;
+	text-shadow: 3px 0px 0px $open, 0px 5px 5px #000;
+}
+
+.fillIn{
+	@include border-radius(10px);
+	background-color: $fillin;
+	margin: 10px 40px;
+	padding: 10px 40px;
+}
+
+.fillIn > h2{
+	font-family: $font-3;
+}
+.fillIn > a{
+	text-decoration: none;
+	color: $open;
+}
+.fillIn > a:hover{
+	@include transition(0.2s);
+	text-decoration: none;
+	color: $splash;
+}
+.fillIn > a:active{
+	text-decoration: none;
+	color: $background;
+}
+.fillIn > p{
+	font-family: $font-4;
+}
+
+
+#resumeFill{
+			h2 {
+			  color: $white;
+			  font-family: $font-3;
+			  text-align: center;
+			  text-transform: uppercase;}
+
+			h3 {
+			  color: $splash;
+			  font-family: $font-3;
+			  text-align: center;
+			  text-transform: uppercase;}
+
+			h4 {
+			  color: $white;
+			  font-family: $font-3;
+			  text-align: center;
+			  text-transform: uppercase;}
+
+			p { 
+			  padding: 10px;
+			  margin-left: 30px;
+			  font-family: $font-4;
+			  font-size: 22px;
+			  display: inline-block;}
+			  
+			p span {
+			  color: $splash;
+			}
+
+			ul {
+			  text-align: left;
+			  font-family: $font-4;
+			}
+			li {
+			  text-align: left;
+			  font-family: $font-4;
+			  display: block;
+			  margin-left: 10px;
+			}
+			span {
+			  color: $open;
+			}
+			em {
+			  color: $splash;
+			  font-style: normal;
+			}
+}
+
+h2 > a{
+	text-decoration: none;
+	color: $open;
+}
+h2 > a:hover{
+	@include transition(0.2s);
+	text-decoration: none;
+	color: $splash;
+}
+h2 > a:active{
+	text-decoration: none;
+	color: $background;
+}

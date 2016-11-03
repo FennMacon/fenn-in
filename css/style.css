@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo|Bitter|Bungee+Hairline|Montserrat");
+body {
+  background-color: #3f3f3f; }
+
+ul {
+  text-align: center; }
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px; }
+
+iframe {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 0 auto; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.container {
+  width: 100%; }
+
+#splash {
+  font-size: 72px;
+  color: #E03333;
+  font-family: "Bitter", serif;
+  text-align: center;
+  display: block;
+  text-shadow: 0px 3px 0px #33AAAA, 0px 5px 5px #000; }
+
+.open {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  font-size: 50px;
+  text-decoration: none;
+  color: #33AAAA;
+  font-family: "Bungee Hairline", cursive;
+  display: block;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 9px 18px 9px;
+  text-decoration: none;
+  text-shadow: 0px 3px 0px #E03333, 0px 5px 5px #000; }
+
+.open:hover {
+  color: #E03333;
+  text-shadow: 3px 0px 0px #33AAAA, 0px 5px 5px #000; }
+
+.open:active {
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  color: #E03333;
+  text-shadow: 3px 0px 0px #E03333, 0px 5px 5px #000; }
+
+.active {
+  color: #33AAAA;
+  text-shadow: 3px 0px 0px #33AAAA, 0px 5px 5px #000; }
+
+.fillIn {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #5f5f5f;
+  margin: 10px 40px;
+  padding: 10px 40px; }
+
+.fillIn > h2 {
+  font-family: "Montserrat", sans-serif; }
+
+.fillIn > a {
+  text-decoration: none;
+  color: #33AAAA; }
+
+.fillIn > a:hover {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  color: #E03333; }
+
+.fillIn > a:active {
+  text-decoration: none;
+  color: #3f3f3f; }
+
+.fillIn > p {
+  font-family: "Arvo", serif; }
+
+#resumeFill h2 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+#resumeFill h3 {
+  color: #E03333;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+#resumeFill h4 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+#resumeFill p {
+  padding: 10px;
+  margin-left: 30px;
+  font-family: "Arvo", serif;
+  font-size: 22px;
+  display: inline-block; }
+#resumeFill p span {
+  color: #E03333; }
+#resumeFill ul {
+  text-align: left;
+  font-family: "Arvo", serif; }
+#resumeFill li {
+  text-align: left;
+  font-family: "Arvo", serif;
+  display: block;
+  margin-left: 10px; }
+#resumeFill span {
+  color: #33AAAA; }
+#resumeFill em {
+  color: #E03333;
+  font-style: normal; }
+
+h2 > a {
+  text-decoration: none;
+  color: #33AAAA; }
+
+h2 > a:hover {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  color: #E03333; }
+
+h2 > a:active {
+  text-decoration: none;
+  color: #3f3f3f; }
+
+/*# sourceMappingURL=style.css.map */
