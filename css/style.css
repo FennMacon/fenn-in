@@ -18,7 +18,8 @@ iframe {
 img {
   max-width: 100%;
   height: auto;
-  display: block; }
+  display: block;
+  margin: 0 auto; }
 
 .container {
   width: 100%; }
@@ -130,6 +131,15 @@ img {
 #resumeFill em {
   color: #E03333;
   font-style: normal; }
+
+.music {
+  display: inline-block; }
+
+.album {
+  display: block; }
+
+.album > iframe {
+  margin: 10 10; }
 
 h2 > a {
   text-decoration: none;
