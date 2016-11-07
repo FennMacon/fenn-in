@@ -42,6 +42,7 @@ iframe{
 	max-width: 100%;
 	display:block;
 	margin: 0 auto 0 auto;
+	border: none;
 }
 
 img{
@@ -116,6 +117,10 @@ img{
 	font-family: $font-4;
 }
 
+.coverImg{
+	margin-top: 20px;
+}
+
 
 #resumeFill{
 			h2 {
@@ -150,12 +155,15 @@ img{
 			ul {
 			  text-align: left;
 			  font-family: $font-4;
+			  font-size: 22px;
 			}
 			li {
 			  text-align: left;
 			  font-family: $font-4;
 			  display: block;
 			  margin-left: 10px;
+			  padding: 10px 20px 0px 0px; 
+			  font-size: 18px;
 			}
 			span {
 			  color: $open;
@@ -165,15 +173,32 @@ img{
 			  font-style: normal;
 			}
 }
-
-.music{
-	display:inline-block;
+#mFrame{
+	padding-top:50px;
+}
+#mCon{
+	width: 100%;
 }
 .album{
-	display:block;
+	display:inline-block;
+	margin: 20px 20px 0px 0px;
+	border: 1px solid $fillin;
+	img{
+		width: 250px;
+	}
+	p{
+		text-align: center;
+	    font-family: $font-1;
+	}
 }
-.album > iframe{
-	margin: 10 10;
+.album:hover{
+	cursor: pointer;
+	border: 1px solid #000;
+}
+.albumActive{
+	border: 1px solid #000;
+	background-color: $background;
+	color: $splash;
 }
 
 h2 > a{
@@ -193,6 +218,14 @@ h2 > a:active{
 @media (max-width: 768px) {
 	.open{
 		font-family: $font-3;
+	}
+	.active{
+		color: $splash;
+	}
+	.album{
+		margin: 20px auto;
+		padding-top: 20px;
+		width: 100%;
 	}
 	.fillIn{
 		@include border-radius(10px);

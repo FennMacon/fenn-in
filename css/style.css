@@ -13,7 +13,8 @@ li {
 iframe {
   max-width: 100%;
   display: block;
-  margin: 0 auto 0 auto; }
+  margin: 0 auto 0 auto;
+  border: none; }
 
 img {
   max-width: 100%;
@@ -95,6 +96,9 @@ img {
 .fillIn > p {
   font-family: "Arvo", serif; }
 
+.coverImg {
+  margin-top: 20px; }
+
 #resumeFill h2 {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -120,26 +124,45 @@ img {
   color: #E03333; }
 #resumeFill ul {
   text-align: left;
-  font-family: "Arvo", serif; }
+  font-family: "Arvo", serif;
+  font-size: 22px; }
 #resumeFill li {
   text-align: left;
   font-family: "Arvo", serif;
   display: block;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding: 10px 20px 0px 0px;
+  font-size: 18px; }
 #resumeFill span {
   color: #33AAAA; }
 #resumeFill em {
   color: #E03333;
   font-style: normal; }
 
-.music {
-  display: inline-block; }
+#mFrame {
+  padding-top: 50px; }
+
+#mCon {
+  width: 100%; }
 
 .album {
-  display: block; }
+  display: inline-block;
+  margin: 20px 20px 0px 0px;
+  border: 1px solid #5f5f5f; }
+  .album img {
+    width: 250px; }
+  .album p {
+    text-align: center;
+    font-family: "Bitter", serif; }
 
-.album > iframe {
-  margin: 10 10; }
+.album:hover {
+  cursor: pointer;
+  border: 1px solid #000; }
+
+.albumActive {
+  border: 1px solid #000;
+  background-color: #3f3f3f;
+  color: #E03333; }
 
 h2 > a {
   text-decoration: none;
@@ -160,6 +183,14 @@ h2 > a:active {
 @media (max-width: 768px) {
   .open {
     font-family: "Montserrat", sans-serif; }
+
+  .active {
+    color: #E03333; }
+
+  .album {
+    margin: 20px auto;
+    padding-top: 20px;
+    width: 100%; }
 
   .fillIn {
     -webkit-border-radius: 10px;
